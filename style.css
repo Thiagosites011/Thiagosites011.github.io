@@ -129,3 +129,76 @@ form input, form textarea {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
+
+/* Responsividade - Mobile First */
+
+/* Para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Header */
+  .header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav {
+    margin-top: 1rem;
+  }
+
+  .nav a {
+    margin: 10px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-primary, .btn-secondary {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Produtos */
+  .produtos .grid {
+    grid-template-columns: 1fr; /* Produtos em uma única coluna */
+    gap: 15px;
+  }
+
+  .produto {
+    padding: 0.75rem;
+  }
+
+  .produto img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Contato */
+  .contato form {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  form input, form textarea {
+    padding: 0.5rem;
+  }
+}
+
+/* Para tablets e telas maiores que 768px */
+@media (max-width: 1024px) {
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+}
