@@ -93,6 +93,24 @@ body {
   background: #444;
 }
 
+/* Botão Especificação do Celular */
+.btn-info {
+  background: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  border: none;
+}
+
+.btn-info:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
 /* Produtos Section */
 .produtos .grid {
   display: grid;
@@ -164,10 +182,24 @@ form input, form textarea {
   padding: 1rem;
   margin-bottom: 1rem;
   border: none;
+  border-radius: 10px;
   background: #444;
-  color: #fff;
-  border-radius: 5px;
-  font-size: 1rem;
+  color: white;
 }
 
-form input::placeholder,
+form input:focus, form textarea:focus {
+  outline: none;
+  background: #555;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer p {
+  font-size: 1rem;
+}
